@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/simple.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
@@ -16,8 +16,90 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+				<section data-background-image="assets/dual_photo.jpeg">
+        <h1 style=color:white;"> Dual data analysis </h1>
+        </section>
+
+				<section>
+<h3> Experimental protocol </h3>
+        <img src="assets/protocol.svg" class="r-stretch">
+        </section>
+
+				<section>
+<h3> Analysis </h3>
+        <img src="assets/events.svg" class="r-stretch">
+        </section>
+
+				<section>
+<h3> Two state Markov model </h3>
+        <img src="assets/model.svg" class="r-stretch">
+        $p = \frac{n_{BP}}{n_{BP} + n_{BB}}$ &nbsp &nbsp $b = \frac{n_{PB}}{n_{PB} + n_{PP}}$
+        </section>
+
+				<section>
+<h3> Behavior indicator </h3>
+<br>
+$ \rho_{Markov} = 2Min(p,b)-1 $
+<br><br><br>
+<ul>
+<li> $\rho_{Markov} = 1$ pure exploration: fish crosses interface
+<li> $\rho_{Markov} = -1$ pure exploitation: fish stays on the same side
+<li> $\rho_{Markov} = 0$ mixed behavior
+<li> Behavior indicator
+<li> NOT a preference indicator
+</ul>
+        </section>
+
+				<section>
+<h3> Preference indicator </h3>
+<br><br><br>
+$ \Pi_{Markov} = p-b $
+<br><br><br>
+<ul>
+<li> $\Pi_{Markov} = 1$ attraction
+<li> $\Pi_{Markov} = -1$ repulsion
+<li> $\Pi_{Markov} = 0$ neutral
+</ul>
+        </section>
+
+				<section>
+<h3> Simulation </h3>
+        <img src="assets/chain_fit.png" class="r-stretch">
+<ul>
+<li> Chain size from the experimental distribution
+<li> p and b probabilities
+</ul>
+        </section>
+
+				<section>
+<h3> Simulation </h3>
+        <img src="assets/pi_pb.svg" class="r-stretch">
+<ul>
+<li> All $(p,b)$ are not accessible: chain size & p and b rational numbers
+<li> Strong preference => exploitation
+</ul>
+        </section>
+
+				<section>
+<h3> ATP </h3>
+        <img src="assets/atp_markov.svg" class="r-stretch">
+        </section>
+
+				<section>
+<h3> ATP </h3>
+        <img src="assets/3dATP.svg" class="r-stretch">
+        </section>
+
+				<section>
+<h3> Conclusion Markov model </h3>
+<ul>
+<li> Capture behavior
+<li> Capture preference
+</ul>
+        </section>
+
+
 			</div>
 		</div>
 
@@ -25,15 +107,22 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          // pass other options into `MathJax.Hub.Config()`
+          TeX: { Macros: { RR: "{\\bf R}" } }
+        },
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
 			});
 		</script>
 	</body>
