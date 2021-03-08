@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content=
+    "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>reveal.js</title>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/custom.css" id="theme">
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id=
+    "highlight-theme">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-background-image="">
+                <h2 style="color:white;&quot;">FastTrack: a general
+                purpose tracking software</h2>
+            </section>
+            <section>
+                <h3>Image-based tracking</h3>
+                <p>Locating objects over time from a video
+                recording.</p><video controls="" class=
+                "r-stretch"><source src="assets/airbus.mp4" type=
+                "video/mp4"></video>
+            </section>
+            <section>
+                <h3>Challenges</h3>
+                <ul>
+                    <li>Objects detection</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Challenges</h3>
+                <ul>
+                    <li>Objects detection</li>
+                    <li>Complex scenary</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Challenges</h3>
+                <ul>
+                    <li>Objects detection</li>
+                    <li>Lighting inconsistencies</li>
+                    <li>Complex scenary</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Image-based tracking</h3>
+                <p>In academia</p>
+                <ul>
+                    <li>Controled lighting</li>
+                    <li>Uniform background</li>
+                    <li>Good image quality</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Existing software</h3>
+                <div style="width=0.5, left=0"></div>
+                <divstyle="width=0.5, left=50%"></div>
+            </section>
+            <section data-background-image=
+            "assets/dual_photo.jpeg">
+                <h1 style="color:white;&quot;">Dual data
+                analysis</h1>
+            </section>
+            <section>
+                <h3>Experimental protocol</h3><img src=
+                "assets/protocol.svg" class="r-stretch">
+            </section>
+            <section>
+                <h3>Analysis</h3><img src="assets/events.svg"
+                class="r-stretch">
+            </section>
+            <section>
+                <h3>Two state Markov model</h3><img src=
+                "assets/model.svg" class="r-stretch"> $p =
+                \frac{n_{BP}}{n_{BP} + n_{BB}}$ &nbsp; &nbsp; $b =
+                \frac{n_{PB}}{n_{PB} + n_{PP}}$
+            </section>
+            <section>
+                <h3>Behavior indicator</h3><br>
+                $ \rho_{Markov} = 2Min(p,b)-1 $<br>
+                <br>
+                <br>
+                <ul>
+                    <li>$\rho_{Markov} = 1$ pure exploration: fish
+                    crosses interface</li>
+                    <li>$\rho_{Markov} = -1$ pure exploitation:
+                    fish stays on the same side</li>
+                    <li>$\rho_{Markov} = 0$ mixed behavior</li>
+                    <li>Behavior indicator</li>
+                    <li>NOT a preference indicator</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Preference indicator</h3><br>
+                <br>
+                <br>
+                $ \Pi_{Markov} = p-b $<br>
+                <br>
+                <br>
+                <ul>
+                    <li>$\Pi_{Markov} = 1$ attraction</li>
+                    <li>$\Pi_{Markov} = -1$ repulsion</li>
+                    <li>$\Pi_{Markov} = 0$ neutral</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Simulation</h3><img src="assets/chain_fit.png"
+                class="r-stretch">
+                <ul>
+                    <li>Chain size from the experimental
+                    distribution</li>
+                    <li>p and b probabilities</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Simulation</h3><img src="assets/pi_pb.svg"
+                class="r-stretch">
+                <ul>
+                    <li>All $(p,b)$ are not accessible: chain size
+                    & p and b rational numbers</li>
+                    <li>Strong preference =&gt; exploitation</li>
+                </ul>
+            </section>
+            <section>
+                <h3>ATP</h3><img src="assets/atp_markov.svg" class=
+                "r-stretch">
+            </section>
+            <section>
+                <h3>ATP</h3><img src="assets/3dATP.svg" class=
+                "r-stretch">
+            </section>
+            <section>
+                <h3>Conclusion Markov model</h3>
+                <ul>
+                    <li>Capture behavior</li>
+                    <li>Capture preference</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script>
+
+
+
+
+    Reveal.initialize({
+                                hash: true,
+                            center: true,
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          // pass other options into `MathJax.Hub.Config()`
+          TeX: { Macros: { RR: "{\\bf R}" } }
+        },
+                                // Learn about plugins: https://revealjs.com/plugins/
+                                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+                        });
+    </script>
+</body>
+</html>

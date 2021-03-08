@@ -1,129 +1,747 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content=
+    "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>reveal.js</title>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/custom.css" id="theme">
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id=
+    "highlight-theme">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-background-video="assets/100_zebra.mp4">
+                <h2 style=
+                "color:white;;-webkit-text-stroke:2px black;">
+                FastTrack: a general purpose tracking software</h2>
+            </section>
+            <section>
+                <h3>Image-based tracking</h3>
+                <p>Locating objects over time from a video
+                recording.</p><video autoplay="true" loop="true"
+                controls="true" class="r-stretch"><source src=
+                "assets/intro.webm" type="video/webm"></video>
+            </section>
+            <section>
+                <h3>Challenges</h3>
+                <ul>
+                    <li>Object detection</li>
+                    <li>Complex object interactions</li>
+                    <li>Trade-off accuracy / specialization</li>
+                    <li>Trade-off accuracy / speed</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Laboratory tracking</h3>
+                <div style="width:45%; float:left">
+                    <u>Simplifications:</u>
+                    <ul>
+                        <li>Controlled lighting</li>
+                        <li>Uniform background</li>
+                        <li>Good image quality</li>
+                        <li>Quasi 2D</li>
+                    </ul>
+                </div>
+                <div style="width:45%; float:right">
+                    <u>Requirements:</u>
+                    <ul>
+                        <li>Low fault tolerance</li>
+                        <li>Minimal human interventions</li>
+                        <li>Versatile</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h3>Existing software</h3>
+                <div style="width:45%; float:left">
+                    <h4><u>Properties-based</u></h4>
+                    <p>Use dynamic properties to keep the
+                    identities (ToxTrac).</p>
+                    <ul>
+                        <li style="color:green">Fast</li>
+                        <li style="color:red">Error
+                        propagation</li>
+                    </ul>
+                </div>
+                <div style="width:45%; float:right">
+                    <h4><u>Individuals-based</u></h4>
+                    <p>Extracting a fingerprint for each individual
+                    (idtracker, idtracker.ai).</p>
+                    <ul>
+                        <li style="color:green">Close to perfect
+                        accuracy</li>
+                        <li style="color:red">Computationally
+                        intensive</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h3>What is missing?</h3>A software that is:
+                <ul>
+                    <li>Fast and accurate</li>
+                    <li>Reliable</li>
+                    <li>Easy to install and to use</li>
+                    <li>Flexible and adaptable to existing
+                    workflow</li>
+                </ul>
+            </section>
+            <section data-background-video="assets/dataset.m4v">
+                <div style=
+                "float:top;color:white;-webkit-text-stroke:2px black;font-size:larger">
+                    <h3 style=
+                    "color:white;-webkit-text-stroke:2px black">
+                    Two-Dimensional tracking Dataset</h3>
+                    <ul>
+                        <li>7 animal species (from cells to
+                        mice)</li>
+                        <li>Active particles</li>
+                        <li>Microfluidic droplets</li>
+                        <li>Macrocopic objects</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h3>FastTrack: a general tracking software</h3>
+                <ul>
+                    <li>Fast and automatic tracking algorithm</li>
+                    <li>Manual ergonomic correction tool</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Workflow</h3><img src="assets/Figure_1.svg"
+                class="r-stretch">
+            </section>
+            <section>
+                <h3>Detection</h3><img src=
+                "assets/Figure_ellipse.svg" class="r-stretch">
+            </section>
+            <section>
+                <h3>Matching</h3>
+                <p>Soft cost:</p>$$c_{i,j} = \frac{\delta
+                r_{i,j}}{s_d} + \frac{\delta\alpha
+                _{i,j}}{s_{\alpha}} + \frac{\delta a_{i,j}}{s_a} +
+                \frac{\delta p_{i,j}}{s_p}$$
+            </section>
+            <section data-transition="slide-in fade-out">
+                <h3>Matching</h3><img src="assets/matching_0.svg"
+                class="r-stretch">
+            </section>
+            <section data-transition="fade-in fade-out">
+                <h3>Matching</h3><img src="assets/matching_1.svg"
+                class="r-stretch">
+            </section>
+            <section data-transition="fade-in fade-out">
+                <h3>Matching</h3><img src="assets/matching_2.svg"
+                class="r-stretch"> $$c_{11}=\frac{d_{11}}{s_d} +
+                \frac{a_{11}}{s_a}$$
+            </section>
+            <section data-transition="fade-in fade-out">
+                <h3>Matching</h3><img src="assets/matching_3.svg"
+                class="r-stretch"> $$c_{12}=\frac{d_{12}}{s_d} +
+                \frac{a_{12}}{s_a}$$
+            </section>
+            <section data-transition="fade-in fade-out">
+                <h3>Matching</h3><img src="assets/matching_4.svg"
+                class="r-stretch"> $$c_{13}=\frac{d_{13}}{s_d} +
+                \frac{a_{13}}{s_a}$$
+            </section>
+            <section data-transition="fade-in fade-out">
+                <h3>Matching</h3><img src="assets/matching_5.svg"
+                class="r-stretch"> $$C = \begin{bmatrix} c_{11} &
+                c_{12} & c_{13}\\ & & \\ & & \end{bmatrix}$$
+            </section>
+            <section>
+                <h3>Matching</h3>
+                <p>Hard cost</p>
+                <ul>
+                    <li>Distance: if $d_{ij}&gt;h_d$, then $c_{ij}
+                    = \infty$</li>
+                    <li>Memory: if object $i$ lost more than $h_t$
+                    time, then remove the $i^{th}$ line</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Post processing</h3>
+                <ul>
+                    <li>Keyboards shortcuts</li>
+                    <li>Swap, delete ids</li>
+                    <li>Annotate, export the tracking</li>
+                </ul><video autoplay="true" loop="true" controls=
+                "true" class="r-stretch"><source src=
+                "assets/replay.webm" type="video/webm"></video>
+            </section>
+            <section>
+                <h3>Performance</h3><img src=
+                "assets/Figure_benchmark.svg" class="r-stretch">
+            </section>
+            <section>
+                <h3>Dataset classification</h3>
+                <p>Incursion: object exits its Voronoï cell defined
+                at a time $t$, after a travel time
+                $\tau$.</p><img src="assets/incursion.svg" class=
+                "r-stretch">
+            </section>
+            <section>
+                <h3>Dataset classification</h3>
+                <p>Number of incursions depends on:</p>
+                <ul>
+                    <li>Timescale $\tau$</li>
+                    <li>Density $d$</li>
+                    <li>Distribution of displacements</li>
+                    <li>Geometric properties of Voronoï cells</li>
+                    <li>Degree of motion alignment</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Reduced displacement</h3>
+                <div style="width:45%; float:left; margin-top:5%">
+                <img src="assets/Figure_pinc.svg" class=
+                "r-stretch"></div>
+                <div style="width:45%; float:right; margin-top:5%">
+                    <p>Reduced displacement $\rho=r\sqrt{d}$</p>
+                    <ul>
+                        <li>Typical distance to neighbors
+                        $\rho=1$</li>
+                        <li>Typical distance to Voronoï cell edges
+                        $\rho=\frac{1}{2}$</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h3>Geometric probability of incursion</h3>
+                <div style="width:45%; float:left;"><img src=
+                "assets/pinc.svg" class="r-stretch"></div>
+                <div style="width:45%; float:right;">
+                    <p style="font-size:smaller">Geometric
+                    probability of incursion: proportion of angles
+                    for which incursions occur for a given
+                    displacement $\rho$.</p><u>Per Voronoï cell</u>
+                    <p style="font-size:smaller">
+                    $$p(\rho)=\frac{\color{red}{\Sigma_{out}(\rho)}}{\color{red}{\Sigma_{out}(\rho)}
+                    \color{black}{+}\color{blue}{\Sigma_{in}(\rho)}}
+                    $$
+                    $$p(\rho)=\frac{\color{red}{\Sigma_{out}(\rho)}}{2\pi}$$</p>
+                </div>
+            </section>
+            <section>
+                <h3>Geometric probability of incursion</h3>
+                <div style="width:45%; float:left"><img src=
+                "assets/voronoi.svg" height="500px"></div>
+                <div style="width:45%; float:right">
+                <p style="font-size:smaller">To account for many
+                shapes and sizes:</p>$$p_{inc}(\rho)=\left&lt;
+                p(\rho) \right&gt;_{cells}$$
+                <p style="font-size:smaller">Purely static
+                quantity.</p><img src="assets/sig.svg" height=
+                "250px"></div>
+            </section>
+            <section>
+                <h3>Probability of incursion</h3>
+                <p style="font-size:smaller">If the dynamics is
+                uncorrelated with the geometric properties of the
+                Voronoï cells: $$P_{inc} = \int_{0}^{\infty}
+                R(\rho) p_{inc}(\rho) \,d \rho $$</p>
+                <ul style="font-size:smaller">
+                    <li style="color:blue;">$R(\rho)$ distribution
+                    of displacements at the timescale $\tau$</li>
+                    <li style="color:red;">$p_{inc}(\rho)$
+                    geometric probability of incursion</li>
+                </ul><img src="assets/Pinc.svg" class="r-stretch">
+            </section>
+            <section>
+                <h3>Probability of incursion</h3>
+                <p>At $\tau=1$, $P_{inc}$ highly sensitive to
+                tracking errors that shift $R(\rho)$ to the
+                right.</p><img src="assets/Pinc_err.svg" class=
+                "r-stretch">
+            </section>
+            <section>
+                <h3>Timescale analysis</h3><img src=
+                "assets/timescale.svg" class="r-stretch">
+            </section>
+            <section>
+                <h3>Optimal framerate</h3>
+                <ul style="font-size:smaller">
+                    <li>Oversampled: lot of storage, higher
+                    processing time</li>
+                    <li>Undersampled: lot of incursions, higher
+                    post-processing time</li>
+                    <p>Define $\tau_1$ the timescale at which the
+                    incursion probability is equal to a single
+                    incursion in the whole movie.</p>
+                    <li>$\tau_1&lt;1$: undersampled</li>
+                    <li>$\tau_1&gt;1$: oversampled</li>
+                </ul><img src="assets/sampled.svg" class=
+                "r-stretch">
+            </section>
+            <section>
+                <h3>Integration & Distribution</h3><img src=
+                "assets/Figure_cicd.svg" class="r-stretch">
+            </section>
+            <section>
+                <h3>Conclusion</h3>
+                <ul>
+                    <li>Easy to install</li>
+                    <li>Available on Linux, MacOS and Windows</li>
+                    <li>General: can handle various systems</li>
+                    <li>New measure of trackability with
+                    $P_{inc}$</li>
+                    <li>$\tau_1$ a criterion to find the optimal
+                    experimental framerate</li>
+                </ul>
+            </section>
+            <section data-background-image=
+            "assets/dual_photo.jpeg">
+                <h1 style="color:white;&quot;">Dual data
+                analysis</h1>
+            </section>
+            <section>
+                <h3>Experimental protocol</h3><img src=
+                "assets/protocol.svg" class="r-stretch">
+            </section>
+            <section>
+                <h3>Analysis</h3><img src="assets/events.svg"
+                class="r-stretch">
+            </section>
+            <section>
+                <h3>Two state Markov model</h3><img src=
+                "assets/model.svg" class="r-stretch"> $p =
+                \frac{n_{BP}}{n_{BP} + n_{BB}}$ &nbsp; &nbsp; $b =
+                \frac{n_{PB}}{n_{PB} + n_{PP}}$
+            </section>
+            <section>
+                <h3>Behavior indicator</h3><br>
+                $ \rho_{Markov} = 2Min(p,b)-1 $<br>
+                <br>
+                <br>
+                <ul>
+                    <li>$\rho_{Markov} = 1$ pure exploration: fish
+                    crosses interface</li>
+                    <li>$\rho_{Markov} = -1$ pure exploitation:
+                    fish stays on the same side</li>
+                    <li>$\rho_{Markov} = 0$ mixed behavior</li>
+                    <li>Behavior indicator</li>
+                    <li>NOT a preference indicator</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Preference indicator</h3><br>
+                <br>
+                <br>
+                $ \Pi_{Markov} = p-b $<br>
+                <br>
+                <br>
+                <ul>
+                    <li>$\Pi_{Markov} = 1$ attraction</li>
+                    <li>$\Pi_{Markov} = -1$ repulsion</li>
+                    <li>$\Pi_{Markov} = 0$ neutral</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Simulation</h3><img src="assets/chain_fit.png"
+                class="r-stretch">
+                <ul>
+                    <li>Chain size from the experimental
+                    distribution</li>
+                    <li>p and b probabilities</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Simulation</h3><img src="assets/pi_pb.svg"
+                class="r-stretch">
+                <ul>
+                    <li>All $(p,b)$ are not accessible: chain size
+                    & p and b rational numbers</li>
+                    <li>Strong preference =&gt; exploitation</li>
+                </ul>
+            </section>
+            <section>
+                <h3>ATP</h3><img src="assets/atp_markov.svg" class=
+                "r-stretch">
+            </section>
+            <section>
+                <h3>ATP</h3><img src="assets/3dATP.svg" class=
+                "r-stretch">
+            </section>
+            <section>
+                <h3>Conclusion Markov model</h3>
+                <ul>
+                    <li>Capture behavior</li>
+                    <li>Capture preference</li>
+                </ul>
+            </section>
+        </div>
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/math/math.js"></script>
+        <script>
 
-		<title>reveal.js</title>
-
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/custom.css" id="theme">
-
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-
-				<section data-background-image="assets/dual_photo.jpeg">
-        <h1 style=color:white;"> Dual data analysis </h1>
-        </section>
-
-				<section>
-<h3> Experimental protocol </h3>
-        <img src="assets/protocol.svg" class="r-stretch">
-        </section>
-
-				<section>
-<h3> Analysis </h3>
-        <img src="assets/events.svg" class="r-stretch">
-        </section>
-
-				<section>
-<h3> Two state Markov model </h3>
-        <img src="assets/model.svg" class="r-stretch">
-        $p = \frac{n_{BP}}{n_{BP} + n_{BB}}$ &nbsp &nbsp $b = \frac{n_{PB}}{n_{PB} + n_{PP}}$
-        </section>
-
-				<section>
-<h3> Behavior indicator </h3>
-<br>
-$ \rho_{Markov} = 2Min(p,b)-1 $
-<br><br><br>
-<ul>
-<li> $\rho_{Markov} = 1$ pure exploration: fish crosses interface
-<li> $\rho_{Markov} = -1$ pure exploitation: fish stays on the same side
-<li> $\rho_{Markov} = 0$ mixed behavior
-<li> Behavior indicator
-<li> NOT a preference indicator
-</ul>
-        </section>
-
-				<section>
-<h3> Preference indicator </h3>
-<br><br><br>
-$ \Pi_{Markov} = p-b $
-<br><br><br>
-<ul>
-<li> $\Pi_{Markov} = 1$ attraction
-<li> $\Pi_{Markov} = -1$ repulsion
-<li> $\Pi_{Markov} = 0$ neutral
-</ul>
-        </section>
-
-				<section>
-<h3> Simulation </h3>
-        <img src="assets/chain_fit.png" class="r-stretch">
-<ul>
-<li> Chain size from the experimental distribution
-<li> p and b probabilities
-</ul>
-        </section>
-
-				<section>
-<h3> Simulation </h3>
-        <img src="assets/pi_pb.svg" class="r-stretch">
-<ul>
-<li> All $(p,b)$ are not accessible: chain size & p and b rational numbers
-<li> Strong preference => exploitation
-</ul>
-        </section>
-
-				<section>
-<h3> ATP </h3>
-        <img src="assets/atp_markov.svg" class="r-stretch">
-        </section>
-
-				<section>
-<h3> ATP </h3>
-        <img src="assets/3dATP.svg" class="r-stretch">
-        </section>
-
-				<section>
-<h3> Conclusion Markov model </h3>
-<ul>
-<li> Capture behavior
-<li> Capture preference
-</ul>
-        </section>
 
 
-			</div>
-		</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-    <script src="plugin/math/math.js"></script>
 
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Reveal.initialize({
+                                hash: true,
+            center: true,
+            slideNumber: true,
         math: {
           mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           // pass other options into `MathJax.Hub.Config()`
           TeX: { Macros: { RR: "{\\bf R}" } }
         },
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
-			});
-		</script>
-	</body>
+                                // Learn about plugins: https://revealjs.com/plugins/
+                                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+                        });
+        </script>
+    </div>
+</body>
 </html>
