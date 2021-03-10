@@ -40,7 +40,7 @@ section.has-dark-background h6 {
   --heading1-text-shadow: none;
   --heading1-size: 3.77em;
   --heading2-size: 2.11em;
-  --heading3-size: 1.55em;
+  --heading3-size: 1.45em;
   --heading4-size: 1em;
   --code-font: monospace;
   --link-color: #00008b;
@@ -110,7 +110,7 @@ section.has-dark-background h6 {
 }
 
 .reveal h3 {
-  font-size: 1.9em;
+  font-size: 1.5em;
 }
 
 .reveal h4 {

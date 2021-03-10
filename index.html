@@ -15,7 +15,8 @@
 <body>
     <div class="reveal">
         <div class="slides">
-            <section data-background-video="assets/100_zebra.mp4">
+            <section data-background-video="assets/100_zebra.mp4"
+            data-background-video-loop="loop">
                 <h2 style=
                 "color:white;;-webkit-text-stroke:2px black;">
                 FastTrack: a general purpose tracking software</h2>
@@ -118,7 +119,10 @@
             </section>
             <section>
                 <h3>Detection</h3><img src=
-                "assets/Figure_ellipse.svg" class="r-stretch">
+                "assets/Figure_ellipse.svg" width="100%">
+                <video autoplay="true" loop="true" controls="true"
+                class="r-stretch"><source src=
+                "assets/detection.mp4" type="video/webm"></video>
             </section>
             <section>
                 <h3>Matching</h3>
@@ -297,8 +301,66 @@
             </section>
             <section data-background-image=
             "assets/dual_photo.jpeg">
-                <h1 style="color:white;&quot;">Dual data
-                analysis</h1>
+                <h2 style="color:white;&quot;">Assessing chemical
+                preference of young zebrafish</h2>
+            </section>
+            <section>
+                <h3>Chemical perception</h3>
+            </section>
+            <section>
+                <h3>Olfaction</h3>
+            </section>
+            <section>
+                <h3>Gustation</h3>
+            </section>
+            <section>
+                <h3>Common chemical sense</h3>
+            </section>
+            <section>
+                <h3>Assessing chemical preference</h3>
+                <p><b>Mandatory product screening</b></p>
+                <ul>
+                    <li>What product?</li>
+                    <li>What concentration?</li>
+                    <li>What age?</li>
+                </ul>
+                <p>Time consuming experimental work.</p>
+            </section>
+            <section>
+                <h3>Dual</h3>
+                <ul>
+                    <li>High-throughput screening setup</li>
+                    <li>Do It Yourself setup easy to replicate and
+                    scalable</li>
+                    <li>Open source, robust and versatile</li><br>
+                    <li>Separate the tank in two "virtual"
+                    compartments</li>
+                    <li><b>Fish can choose its prefered
+                    side</b></li>
+                </ul>
+            </section>
+            <section data-background-video=
+            "assets/compartment.webm" data-background-size=
+            "contain">
+                <h2><span class="fragment" style="color: white">How
+                does it work?</span></h2>
+            </section>
+            <section data-background-image="assets/dual.png">
+            </section>
+            <section data-background-video="assets/meca.mp4"
+            data-transition="fade-in fade-out"></section>
+            <section data-background-video="assets/box.mp4"
+            data-transition="fade-in fade-out"></section>
+            <section>
+                <img src="assets/chip.svg" class="r-stretch">
+            </section>
+            <section>
+                <h3>Dye</h3>
+                <ul>
+                    <li>Infrared dye</li>
+                    <li>Physical dye: colloidal emulsion</li>
+                    <li>Biocompatible</li>
+                </ul>
             </section>
             <section>
                 <h3>Experimental protocol</h3><img src=
@@ -309,55 +371,74 @@
                 class="r-stretch">
             </section>
             <section>
+                <h3>Event-based</h3>
+                <div style="width:45%; float:left; margin-top:5%">
+                    <u>Exploration</u>
+                    <p style="font-size:smaller">$$\rho_{event} =
+                    \frac{n_{BP} + n_{PB}}{n_{BB} + n_{PP}}$$</p>
+                    <ul style="font-size:smaller">
+                        <li>$\rho_{event} = \infty$
+                        exploration</li>
+                        <li>$\rho_{event} = 0$ exploitation</li>
+                        <li>$\rho_{event} = 1$ mixed behavior</li>
+                    </ul>
+                </div>
+                <div style="width:45%; float:right; margin-top:5%">
+                    <u>Preference</u>
+                    <p style="font-size:smaller">$$\Pi_{event} =
+                    \frac{n_{BP} + n_{PP} - n_{BB} - n_{PB}}{n_{BP}
+                    + n_{PP} + n_{BB} + n_{PB}} $$</p>
+                    <ul style="font-size:smaller">
+                        <li>$\Pi_{event} = 1$ attraction</li>
+                        <li>$\Pi_{event} = -1$ repulsion</li>
+                        <li>$\Pi_{event} = 0$ neutral</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
                 <h3>Two state Markov model</h3><img src=
                 "assets/model.svg" class="r-stretch"> $p =
                 \frac{n_{BP}}{n_{BP} + n_{BB}}$ &nbsp; &nbsp; $b =
                 \frac{n_{PB}}{n_{PB} + n_{PP}}$
             </section>
             <section>
-                <h3>Behavior indicator</h3><br>
-                $ \rho_{Markov} = 2Min(p,b)-1 $<br>
-                <br>
-                <br>
+                <h3>Markov-based behavior quantification</h3>
+                <div style="width:45%; float:left; margin-top:5%">
+                    <u>Exploration</u> $$\rho_{Markov} =
+                    2Min(p,b)-1$$
+                    <ul style="font-size:smaller">
+                        <li>$\rho_{Markov} = 1$ exploration</li>
+                        <li>$\rho_{Markov} = -1$ exploitation</li>
+                        <li>$\rho_{Markov} = 0$ mixed behavior</li>
+                    </ul>
+                </div>
+                <div style="width:45%; float:right; margin-top:5%">
+                    <u>Preference</u> $$\Pi_{Markov} = p-b$$
+                    <ul style="font-size:smaller">
+                        <li>$\Pi_{Markov} = 1$ attraction</li>
+                        <li>$\Pi_{Markov} = -1$ repulsion</li>
+                        <li>$\Pi_{Markov} = 0$ neutral</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h3>Numerical simulation</h3><img src=
+                "assets/pi_pb.svg" class="r-stretch">
                 <ul>
-                    <li>$\rho_{Markov} = 1$ pure exploration: fish
-                    crosses interface</li>
-                    <li>$\rho_{Markov} = -1$ pure exploitation:
-                    fish stays on the same side</li>
-                    <li>$\rho_{Markov} = 0$ mixed behavior</li>
-                    <li>Behavior indicator</li>
-                    <li>NOT a preference indicator</li>
+                    <li>All $(p,b)$ are not accessible: sequence
+                    length & p and b rational numbers</li>
+                    <li>Strong preference $\implies$
+                    exploitation</li>
                 </ul>
             </section>
             <section>
-                <h3>Preference indicator</h3><br>
-                <br>
-                <br>
-                $ \Pi_{Markov} = p-b $<br>
-                <br>
-                <br>
-                <ul>
-                    <li>$\Pi_{Markov} = 1$ attraction</li>
-                    <li>$\Pi_{Markov} = -1$ repulsion</li>
-                    <li>$\Pi_{Markov} = 0$ neutral</li>
-                </ul>
+                <h3>Dye effect</h3>
             </section>
             <section>
-                <h3>Simulation</h3><img src="assets/chain_fit.png"
-                class="r-stretch">
+                <h3>Product screening</h3>
                 <ul>
-                    <li>Chain size from the experimental
-                    distribution</li>
-                    <li>p and b probabilities</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Simulation</h3><img src="assets/pi_pb.svg"
-                class="r-stretch">
-                <ul>
-                    <li>All $(p,b)$ are not accessible: chain size
-                    & p and b rational numbers</li>
-                    <li>Strong preference =&gt; exploitation</li>
+                    <li>Citric acid: repulsive [citation]</li>
+                    <li>ATP, adenosine: attractive [citation]</li>
                 </ul>
             </section>
             <section>
@@ -382,6 +463,79 @@
         <script src="plugin/highlight/highlight.js"></script>
         <script src="plugin/math/math.js"></script>
         <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
