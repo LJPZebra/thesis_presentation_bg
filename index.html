@@ -18,8 +18,10 @@
             <section data-background-video="assets/100_zebra.mp4"
             data-background-video-loop="loop">
                 <img src="assets/su.png" width="25%" style=
-                "float: left"><img src="assets/ljp.png" width="25%"
-                style="float: right"><br>
+                "float: left; background: rgba(255,255,255,0.5)"><img src="assets/ljp.png"
+                width="25%" style=
+                "float: right; background: rgba(255,255,255,0.5)"><br>
+
                 <br>
                 <br>
                 <br>
@@ -99,7 +101,7 @@
                 </div>
                 <div style="width:45%; float:right">
                     <h4><u>Individuals-based</u></h4>
-                    <p>Extracting a fingerprint for each individual
+                    <p>Extract a fingerprint for each individual
                     (idtracker, idtracker.ai).</p>
                     <ul>
                         <li style="color:green">Close to perfect
@@ -138,7 +140,7 @@
                 <h3>FastTrack: a general tracking software</h3>
                 <ul>
                     <li>Fast and automatic tracking algorithm</li>
-                    <li>Manual ergonomic correction tool</li>
+                    <li>Ergonomic correction tool</li>
                 </ul><img src="assets/readme.png" class=
                 "r-stretch">
             </section>
@@ -214,9 +216,9 @@
             </section>
             <section>
                 <h3>Dataset classification</h3>
+                <p>What is needed?</p>
                 <ul>
-                    <li>Find a metric to classify tracking
-                    difficulty</li>
+                    <li>Metric to classify tracking difficulty</li>
                     <li>Does not necessitate groundtruth
                     trajectories</li>
                     <li>Robust to tracking errors</li>
@@ -310,7 +312,7 @@
             <section>
                 <h3>Optimal framerate</h3>
                 <ul style="font-size:smaller">
-                    <li>Oversampled: lot of storage, higher
+                    <li>Oversampled: lot of storage space, higher
                     processing time</li>
                     <li>Undersampled: lot of incursions, higher
                     post-processing time</li>
@@ -324,15 +326,23 @@
             </section>
             <section>
                 <h3>Conclusion</h3>
-                <ul>
-                    <li>Easy to install</li>
-                    <li>Available on Linux, MacOS and Windows</li>
-                    <li>General: can handle various systems</li>
-                    <li>New measure of trackability with
-                    $P_{inc}$</li>
-                    <li>$\tau_1$ a criterion to find the optimal
-                    experimental framerate</li>
-                </ul>
+                <div style="width:45%; float:left">
+                    <ul>
+                        <li>Easy to install</li>
+                        <li>Available on Linux, MacOS and
+                        Windows</li>
+                        <li>Versatile</li>
+                        <li>Open-source & API documented</li>
+                    </ul>
+                </div>
+                <div style="width:45%; float:right">
+                    <ul>
+                        <li>New measure of trackability with
+                        $P_{inc}$</li>
+                        <li>$\tau_1$ a criterion to find the
+                        optimal experimental framerate</li>
+                    </ul>
+                </div>
             </section>
             <section data-background-image=
             "assets/dual_photo.jpeg">
@@ -359,7 +369,7 @@
                         <li>Various behaviors: phototaxis, OMR,
                         predation</li>
                         <li>Whole brain imaging using lightsheet
-                        and transgenic larval fish</li>
+                        microscopy and transgenic larval fish</li>
                     </ul>
                 </div>
                 <div style="width:45%; float:right">
@@ -440,11 +450,12 @@
             <section data-background-image="assets/dual.png">
             </section>
             <section data-background-video="assets/meca.mp4"
-            data-background-video-loop="true" data-transition=
-            "fade-in fade-out"></section>
+            data-transition="fade-in fade-out">
+                <p style="font-size:small">TODO remove black screen
+                end</p>
+            </section>
             <section data-background-video="assets/box.mp4"
-            data-background-video-loop="true" data-transition=
-            "fade-in fade-out"></section>
+            data-transition="fade-in fade-out"></section>
             <section>
                 <img src="assets/chip.svg" class="r-stretch">
             </section>
@@ -476,9 +487,10 @@
                     <p style="font-size:smaller">$$\rho_{event} =
                     \frac{n_{BP} + n_{PB}}{n_{BB} + n_{PP}}$$</p>
                     <ul style="font-size:smaller">
-                        <li>$\rho_{event} = \infty$
+                        <li>$\rho_{event} \rightarrow \infty$
                         exploration</li>
-                        <li>$\rho_{event} = 0$ exploitation</li>
+                        <li>$\rho_{event} \rightarrow 0$
+                        exploitation</li>
                         <li>$\rho_{event} = 1$ mixed behavior</li>
                     </ul>
                 </div>
@@ -563,14 +575,14 @@
                 "assets/atp_markov.svg" class="r-stretch">
             </section>
             <section>
-                <h3>ATP: Markov-based</h3><img src=
+                <h3>ATP: Markov-based by fish</h3><img src=
                 "assets/3dATP.svg" class="r-stretch">
             </section>
             <section>
                 <h3>Perspective</h3>
                 <ul>
                     <li>Explore ATP effect: fish age,
-                    concentration, presentation time</li>
+                    concentration, presentation times</li>
                     <li>Expand Dual usage: timed product
                     presentation, more cycles</li>
                     <li>Other animals: adult Danionella</li>
@@ -586,11 +598,6 @@
         <script src="plugin/highlight/highlight.js"></script>
         <script src="plugin/math/math.js"></script>
         <script>
-
-
-
-
-
         Reveal.initialize({
                                 hash: true,
             center: true,
