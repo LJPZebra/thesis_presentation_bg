@@ -12,7 +12,7 @@
    viewBox="0 0 666.14167 403.93679"
    id="svg2"
    version="1.1"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
    sodipodi:docname="protocol.svg">
   <defs
      id="defs4">
@@ -118,10 +118,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="g4316"
      showgrid="false"
-     inkscape:window-width="947"
-     inkscape:window-height="1042"
-     inkscape:window-x="965"
-     inkscape:window-y="30"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:document-rotation="0"
      inkscape:snap-text-baseline="false" />
@@ -533,6 +533,17 @@
            x="152.33203"
            y="509.35254"><tspan
              style="font-size:25px">P2</tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:30px;line-height:1.25;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans, Normal';letter-spacing:0px;stroke-width:0.9375"
+         x="232.15981"
+         y="686.16193"
+         id="text954"><tspan
+           sodipodi:role="line"
+           id="tspan952"
+           x="232.15981"
+           y="686.16193"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.9375">+ Dye</tspan></text>
     </g>
   </g>
 </svg>
