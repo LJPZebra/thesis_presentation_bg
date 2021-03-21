@@ -10,6 +10,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 section.has-dark-background,
 section.has-dark-background h1,
 section.has-dark-background h2,
@@ -50,8 +51,8 @@ section.has-dark-background h6 {
 }
 
 .reveal-viewport {
-  background: #fff;
-  background-color: #fff;
+  background: var(--background-color);
+  background-color: var(--background-color);
 }
 
 .reveal {
@@ -68,7 +69,7 @@ section.has-dark-background h6 {
 }
 
 .reveal ::-moz-selection {
-  color: #fff;
+  color: var(--background-color);
   background: rgba(0, 0, 0, 0.99);
   text-shadow: none;
 }
@@ -359,4 +360,13 @@ section.has-dark-background h6 {
   .backgrounds {
     background-color: #fff;
   }
+}
+
+.reveal .citation {
+  display: block;
+  font-family: "Inconsolata", monospace;
+  font-size: 0.5em;
+  color: #2565ae;
+  font-style: oblique;
+  letter-spacing: -1.5px;
 }

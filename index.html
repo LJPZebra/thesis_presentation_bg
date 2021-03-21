@@ -36,7 +36,7 @@
             <section data-background-video="assets/dataset.m4v"
             data-background-video-loop="loop">
                 <h2 style=
-                "color:black;-webkit-text-stroke:2px white;">
+                "color:black;-webkit-text-stroke:2px white;">I.
                 FastTrack: a general purpose tracking
                 software</h2><br>
                 <br>
@@ -75,7 +75,7 @@
                         <li>Controlled lighting</li>
                         <li>Uniform background</li>
                         <li>Good image quality</li>
-                        <li>Quasi 2D</li>
+                        <li>Often quasi 2D</li>
                     </ul>
                 </div>
                 <div style="width:45%; float:right">
@@ -92,7 +92,8 @@
                 <div style="width:45%; float:left">
                     <h4><u>Properties-based</u></h4>
                     <p>Use dynamic properties to keep the
-                    identities (ToxTrac).</p>
+                    identities <span class="citation">(Rodriguez,
+                    Alvaro, et al. 2018)</span></p>
                     <ul>
                         <li style="color:green">Fast</li>
                         <li style="color:red">Error
@@ -102,7 +103,8 @@
                 <div style="width:45%; float:right">
                     <h4><u>Individuals-based</u></h4>
                     <p>Extract a fingerprint for each individual
-                    (idtracker, idtracker.ai).</p>
+                    <span class="citation">(Romero-Ferrero,
+                    Francisco, et al. 2019)</span></p>
                     <ul>
                         <li style="color:green">Close to perfect
                         accuracy</li>
@@ -110,8 +112,7 @@
                         intensive</li>
                     </ul>
                 </div>
-            </section>
-            <section>
+            </section><!--<section>
                 <h3>What is missing?</h3>A software that is:
                 <ul>
                     <li>Fast and accurate</li>
@@ -120,7 +121,7 @@
                     <li>Flexible and adaptable to existing
                     workflow</li>
                 </ul>
-            </section>
+            </section>-->
             <section data-background-video="assets/dataset.m4v">
                 <div style=
                 "float:top;color:white;-webkit-text-stroke:2px black;font-size:larger">
@@ -128,11 +129,18 @@
                     "color:white;-webkit-text-stroke:2px black">
                     Two-Dimensional tracking Dataset</h3>
                     <ul>
+                        <li>41 movies under CC BY-NC-SA 4.0
+                        license</li>
                         <li>7 animal species (from cells to
                         mice)</li>
                         <li>Active particles</li>
                         <li>Microfluidic droplets</li>
                         <li>Macrocopic objects</li>
+                        <li>
+                            <a href=
+                            "http://chat.ljp.upmc.fr/datasets/TD2/">
+                            http://chat.ljp.upmc.fr/datasets/TD2/</a>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -145,30 +153,22 @@
                 "r-stretch">
             </section>
             <section>
-                <h3>Workflow</h3><img src="assets/Figure_1.svg"
-                class="r-stretch">
-            </section>
-            <section>
                 <h3>Detection</h3><img src=
                 "assets/Figure_ellipse.svg" width="100%">
                 <video data-autoplay="true" loop="true" controls=
                 "true" class="r-stretch"><source src=
                 "assets/detection.mp4" type="video/mp4"></video>
             </section>
-            <section>
-                <h3>Matching</h3>
-                <p><u>Soft cost</u></p>$$c_{ij} = \frac{\delta
-                d_{ij}}{s_d} + \frac{\delta a _{ij}}{s_{a}} +
-                \frac{\delta A_{ij}}{s_A} + \frac{\delta
-                P_{i,j}}{s_P}$$
-            </section>
             <section data-transition="slide-in fade-out">
                 <h3>Matching</h3><img src="assets/matching_0.svg"
                 class="r-stretch">
+                <p>Keep the identity of the objects from one
+                image...</p>
             </section>
             <section data-transition="fade-in fade-out">
                 <h3>Matching</h3><img src="assets/matching_1.svg"
                 class="r-stretch">
+                <p>To the next.</p>
             </section>
             <section data-transition="fade-in fade-out">
                 <h3>Matching</h3><img src="assets/matching_2.svg"
@@ -192,6 +192,9 @@
             </section>
             <section>
                 <h3>Matching</h3>
+                <p><u>Soft cost</u></p>$$c_{ij} = \frac{\delta
+                d_{ij}}{s_d} + \frac{\delta a _{ij}}{s_{a}} +
+                \frac{...}{...}$$
                 <p><u>Hard cost</u></p>
                 <ul>
                     <li>Distance: if $d_{ij}&gt;h_d$, then $c_{ij}
@@ -199,13 +202,19 @@
                     <li>Memory: if object $i$ lost more than $h_t$
                     time, then remove the $i^{th}$ line</li>
                 </ul>
+                <p><u>Global optimization</u></p>
+                <p>Best assignment possible using Hungarian
+                algorithm <span class="citation">(J. Munkres,
+                1957)</span></p>
             </section>
             <section>
                 <h3>Post processing</h3>
                 <ul>
-                    <li>Keyboards shortcuts</li>
+                    <li>Keyboard and mouse shortcuts</li>
                     <li>Swap, delete ids</li>
-                    <li>Annotate, export the tracking</li>
+                    <li>Annotation frame by frame <span class=
+                    "citation">(Sturman, Oliver, et al.,
+                    2020)</span></li>
                 </ul><video data-autoplay="true" loop="true"
                 controls="true" class="r-stretch"><source src=
                 "assets/replay.webm" type="video/webm"></video>
@@ -216,7 +225,6 @@
             </section>
             <section>
                 <h3>Dataset classification</h3>
-                <p>What is needed?</p>
                 <ul>
                     <li>Metric to classify tracking difficulty</li>
                     <li>Does not necessitate groundtruth
@@ -230,8 +238,7 @@
                 at a time $t$, after a travel time
                 $\tau$.</p><img src="assets/incursion.svg" class=
                 "r-stretch">
-            </section>
-            <section>
+            </section><!--<section>
                 <h3>Incursion</h3>
                 <p>Number of incursions depends on:</p>
                 <ul>
@@ -241,7 +248,7 @@
                     <li>Geometric properties of Voronoï cells</li>
                     <li>Degree of motion alignment</li>
                 </ul>
-            </section>
+            </section>-->
             <section>
                 <h3>Reduced displacement</h3>
                 <div style="width:45%; float:left; margin-top:5%">
@@ -280,18 +287,19 @@
                 <div style="width:45%; float:right">
                 <p style="font-size:smaller">To account for many
                 shapes and sizes:</p>$$p_{inc}(\rho)=\left&lt;
-                p(\rho) \right&gt;_{cells}$$
-                <p style="font-size:smaller">Purely static
-                quantity.</p><img src="assets/sig.svg" height=
-                "250px"></div>
+                p(\rho) \right&gt;_{cells}$$ <img src=
+                "assets/sig.svg" height="250px"></div>
             </section>
             <section>
                 <h3>Probability of incursion</h3>
                 <p style="font-size:smaller">If the dynamics is
                 uncorrelated with the geometric properties of the
-                Voronoï cells: $$P_{inc} = \int_{0}^{\infty}
-                R(\rho) p_{inc}(\rho) \,d \rho $$</p>
-                <ul style="font-size:smaller">
+                Voronoï cells: $$\color{green}{P_{inc}} =
+                \int_{0}^{\infty} \color{blue}{R(\rho)}
+                \color{red}{p_{inc}(\rho)} \,d \rho $$</p>
+                <ul style="font-size:0.6em">
+                    <li style="color:green;">$P_{inc}$ probability
+                    of incursion</li>
                     <li style="color:blue;">$R(\rho)$ distribution
                     of displacements at the timescale $\tau$</li>
                     <li style="color:red;">$p_{inc}(\rho)$
@@ -308,6 +316,22 @@
             <section>
                 <h3>Timescale analysis</h3><img src=
                 "assets/timescale.svg" class="r-stretch">
+                <p>$$P_{inc} = \frac{L}{1 + exp(-k
+                .log(\frac{\tau}{\tau_0}))}$$</p>
+            </section>
+            <section>
+                <h3>Timescale analysis</h3><img src=
+                "assets/timescale_deg.svg" class="r-stretch">
+                <p>$$\delta = \frac{N_{err}}{N_{obj}}$$</p>
+                <p>Insensitive up to 1 error every 1000
+                detections.</p>
+            </section>
+            <section>
+                <h3>Timescale analysis</h3><video src=
+                "assets/ZFJ_001.webm" controls="" data-autoplay=
+                "true" loop="true" class="r-stretch"></video>
+                <p>ZFJ_001 very difficult movie: $$\delta \approx
+                0.003$$ without post-processing.</p>
             </section>
             <section>
                 <h3>Optimal framerate</h3>
@@ -348,28 +372,69 @@
             "assets/dual_photo.jpeg">
                 <h2 style=
                 "color:white;-webkit-text-stroke:2px black;background: rgba(0,0,0,0.5)">
-                Assessing chemical preference of young
+                II. Assessing chemical preference of young
                 zebrafish</h2>
             </section>
             <section>
-                <h3>Chemical perception</h3>
+                <h3 style="margin-bottom: 0">Chemical
+                perception</h3><span class="citation">(Hara,
+                Toshiaki J., 2012)</span> <span class=
+                "citation">(Yarmolinsky, David A., Charles S.
+                Zuker, and Nicholas JP Ryba, 2009)</span>
                 <ul>
-                    <li>Most ancien sensory system</li>
+                    <li>Most ancien sensory system dating back 500
+                    millions years ago</li>
+                    <li>The most used sensory modality</li>
                     <li>Wide range of taxa: unicellular to
                     mamalian</li>
+                    <li>Highly conservated features</li>
                     <li>Mediate feeding and reproduction</li>
                 </ul>
+            </section>
+            <section>
+                <h3 style="margin-bottom:0">
+                Olfaction</h3><span class="citation">(Laberge,
+                Frédéric, and Toshiaki J. Hara., 2001)</span>
+                <ul>
+                    <li>Olfactory epithelium (snout) projecting
+                    into the olfactory bulb (brain)</li>
+                    <li>Mediate feeding, reproduction, fright
+                    reaction</li>
+                </ul><img src="assets/olfactory_schematic.png"
+                class="r-stretch">
+            </section>
+            <section>
+                <div style="width:45%; float:left;">
+                    <h3>Gustation</h3>
+                    <ul>
+                        <li>Located on the head, lips,
+                        oropharyngeal cavity and barbels</li>
+                        <li>Mediate feeding, reproduction</li>
+                    </ul>
+                </div>
+                <div style="width:45%; float:right;">
+                    <h3>Common chemical sense</h3>
+                    <ul>
+                        <li>Solitary chemosensory cells in the
+                        epidermis</li>
+                    </ul>
+                </div>
             </section>
             <section>
                 <h3>The zebrafish</h3>
                 <div style="width:45%; float:left">
                     <ul>
                         <li>Small and robust vertebrate</li>
-                        <li>Well studied chemical senses</li>
+                        <li>Well studied chemical senses: first
+                        odor responses $\approx$ 3 dpf <span class=
+                        "citation">(Li, Jun, et al.,
+                        2005)</span></li>
                         <li>Various behaviors: phototaxis, OMR,
                         predation</li>
                         <li>Whole brain imaging using lightsheet
-                        microscopy and transgenic larval fish</li>
+                        microscopy and transgenic larval
+                        fish<span class="citation">(Panier, Thomas,
+                        et al., 2013)</span></li>
                     </ul>
                 </div>
                 <div style="width:45%; float:right">
@@ -382,39 +447,33 @@
                 </div>
             </section>
             <section>
-                <h3>Zebrafish olfaction</h3>
-                <ul>
-                    <li>Olfactory epithelium (snout) projecting
-                    into the olfactory bulb (brain)</li>
-                    <li>Olfactory epithelium formation start at 2
-                    dpf</li>
-                    <li>Mediate migration, feeding, reproduction,
-                    fright reaction</li>
-                </ul><img src="assets/olfactory_schematic.png"
-                class="r-stretch">
-            </section>
-            <section>
-                <h3>Zebrafish gustation</h3>
-                <div style="width:45%; float:left;">
+                <h3>Zebrafish phototaxis</h3>
+                <div style="width:45%; float:right">
                     <ul>
-                        <li>$\approx 2 200$ taste buds</li>
-                        <li>Located on the head, lips,
-                        oropharyngeal cavity and barbels</li>
-                        <li>Formation start at 3-4 dpf</li>
-                        <li>Mediate feeding, reproduction</li>
-                    </ul>
+                        <li>Light-seeking navigation</li>
+                        <li>Spatial & temporal phototaxis</li>
+                        <li>Map behavior onto a neuronal model</li>
+                    </ul><span class="citation">(Karpenko, Sophia,
+                    et al., 2020)</span>
                 </div>
-                <div style="width:45%; float:right;"><img src=
-                "assets/gustatory_schematic.png" class=
-                "r-stretch"></div>
+                <div style="width:45%; float:left">
+                    <img src="assets/phtotaxis.jpg" width="100%">
+                    <span class="citation">(Chen, Xiuye, and
+                    Florian Engert, 2014)</span>
+                </div>
             </section>
             <section>
-                <h3>Zebrafish common chemical sense</h3>
+                <h3>Assessing chemical preference</h3>
                 <ul>
-                    <li>Solitary chemosensory cells in the
-                    epidermis</li>
-                    <li>$1.10^6$ per $mm^2$</li>
-                    <li>Formation start at 3 dpf</li>
+                    <li>Biological noise</li>
+                    <li>Chemical noise: intermittency,
+                    concentration variations</li><br>
+                    <br>
+                    <li>Find an attractive product</li>
+                    <li>Study chemically-driven navigation</li>
+                    <li>Neuro-imaging <span class=
+                    "citation">(Candelier, Raphaël, et al.,
+                    2015)</span></li>
                 </ul>
             </section>
             <section>
@@ -427,7 +486,10 @@
                 </ul>
                 <p>Time consuming experimental work.</p>
             </section>
-            <section>
+            <section data-background-video=
+            "assets/compartment.webm" data-background-size=
+            "contain" data-background-video-loop="true" style=
+            "color: white;-webkit-text-stroke:0.7px black;">
                 <h3>Dual</h3>
                 <ul>
                     <li>High-throughput screening setup</li>
@@ -441,19 +503,10 @@
                     side</b></li>
                 </ul>
             </section>
-            <section data-background-video=
-            "assets/compartment.webm" data-background-size=
-            "contain" data-background-video-loop="true">
-                <h2><span class="fragment" style="color: white">How
-                does it work?</span></h2>
-            </section>
             <section data-background-image="assets/dual.png">
             </section>
             <section data-background-video="assets/meca.mp4"
-            data-transition="fade-in fade-out">
-                <p style="font-size:small">TODO remove black screen
-                end</p>
-            </section>
+            data-transition="fade-in fade-out"></section>
             <section data-background-video="assets/box.mp4"
             data-transition="fade-in fade-out"></section>
             <section>
@@ -462,55 +515,38 @@
             <section>
                 <h3>Dye</h3>
                 <ul>
-                    <li>Infrared dye</li>
-                    <li>Physical dye: colloidal emulsion</li>
-                    <li>Biocompatible</li>
+                    <li>Infrared, biocompatible, chemically inert,
+                    neutral</li>
+                    <li>Silicone oil, sodium dodecyl sulfate, and
+                    alginate emulsion prepared by Lea-Laetitia
+                    Pontani</li>
+                    <li>$\approx 0.5 mL$ for $1 L$ of solution</li>
                 </ul><img src="assets/dye.png" class="r-stretch">
             </section>
             <section>
                 <h3 style="margin-bottom:0">Experimental
                 protocol</h3><img src="assets/protocol.svg" class=
                 "r-stretch">
-                <ul style="font-size:smaller">
-                    <li>2 weeks old zebrafish</li>
-                    <li>In the dark</li>
-                </ul>
             </section>
             <section>
-                <h3>Analysis</h3><img src="assets/events.svg"
-                class="r-stretch">
+                <h3>Analysis</h3>
+                <ul>
+                    <li>Complex image analysis problem</li>
+                    <li>Complex behavior</li>
+                </ul><video data-autoplay="true" loop="true"
+                controls="true" class="r-stretch"><source src=
+                "assets/manual_sample.webm"></video>
             </section>
             <section>
-                <h3>Event-based analysis</h3>
-                <div style="width:45%; float:left; margin-top:5%">
-                    <u>Exploration</u>
-                    <p style="font-size:smaller">$$\rho_{event} =
-                    \frac{n_{BP} + n_{PB}}{n_{BB} + n_{PP}}$$</p>
-                    <ul style="font-size:smaller">
-                        <li>$\rho_{event} \rightarrow \infty$
-                        exploration</li>
-                        <li>$\rho_{event} \rightarrow 0$
-                        exploitation</li>
-                        <li>$\rho_{event} = 1$ mixed behavior</li>
-                    </ul>
+                <h3>Markov model</h3><img src="assets/events.svg"
+                width="80%">
+                <div style="width:45%; float:left;margin-left:5%;">
+                <img src="assets/model.svg" width="50%"></div>
+                <div style=
+                "width:45%; float:right;font-size:smaller;margin-top:8%;margin-right:5%;">
+                    $$p = \frac{n_{BP}}{n_{BP} + n_{BB}}$$ $$b =
+                    \frac{n_{PB}}{n_{PB} + n_{PP}}$$
                 </div>
-                <div style="width:45%; float:right; margin-top:5%">
-                    <u>Preference</u>
-                    <p style="font-size:smaller">$$\Pi_{event} =
-                    \frac{n_{BP} + n_{PP} - n_{BB} - n_{PB}}{n_{BP}
-                    + n_{PP} + n_{BB} + n_{PB}} $$</p>
-                    <ul style="font-size:smaller">
-                        <li>$\Pi_{event} = 1$ attraction</li>
-                        <li>$\Pi_{event} = -1$ repulsion</li>
-                        <li>$\Pi_{event} = 0$ neutral</li>
-                    </ul>
-                </div>
-            </section>
-            <section>
-                <h3>Markov model</h3><img src="assets/model.svg"
-                class="r-stretch"> $p = \frac{n_{BP}}{n_{BP} +
-                n_{BB}}$ &nbsp; &nbsp; $b = \frac{n_{PB}}{n_{PB} +
-                n_{PP}}$
             </section>
             <section>
                 <h3>Markov-based analysis</h3>
@@ -534,7 +570,7 @@
             </section>
             <section>
                 <h3>Numerical simulation</h3><img src=
-                "assets/pi_pb.svg" class="r-stretch">
+                "assets/pi_pb_2.svg" class="r-stretch">
                 <ul>
                     <li>All $(p,b)$ are not accessible: sequence
                     length & p and b rational numbers</li>
@@ -550,25 +586,19 @@
                 <h3>Product screening</h3>
                 <ul>
                     <li>Citric acid: repulsive on adult zebrafish
-                    <span style="font-size:smaller">(Abreu, Murilo
-                    S., et al. 2016)</span></li>
-                    <li>ATP, adenosine: attractive on adult
-                    zebrafish <span style=
-                    "font-size:smaller">(Wakisaka, Noriko, et al.
-                    2017)</span></li>
+                    <span class="citation">(Abreu, Murilo S., et
+                    al. 2016)</span></li>
+                    <li>ATP: attractive on adult zebrafish
+                    <span class="citation">(Wakisaka, Noriko, et
+                    al. 2017)</span><br></li>
+                    <li>2 weeks zebrafish</li>
+                    <li>ATP: 24h of starvation before
+                    assessment</li>
                 </ul>
-            </section>
-            <section>
-                <h3>Citric acid: event-based</h3><img src=
-                "assets/citricacid_event.svg" class="r-stretch">
             </section>
             <section>
                 <h3>Citric acid: Markov-based</h3><img src=
                 "assets/citricacid_markov.svg" class="r-stretch">
-            </section>
-            <section>
-                <h3>ATP: event-based</h3><img src=
-                "assets/atp_event.svg" class="r-stretch">
             </section>
             <section>
                 <h3>ATP: Markov-based</h3><img src=
@@ -579,18 +609,24 @@
                 "assets/3dATP.svg" class="r-stretch">
             </section>
             <section>
-                <h3>Perspective</h3>
+                <h3>Conclusion and perspective</h3>
+                <p><u>ATP</u></p>
                 <ul>
-                    <li>Explore ATP effect: fish age,
-                    concentration, presentation times</li>
-                    <li>Expand Dual usage: timed product
-                    presentation, more cycles</li>
-                    <li>Other animals: adult Danionella</li>
+                    <li>Temporal: reduce fish age</li>
+                    <li>Acquisition: forced bath</li>
+                    <li>Persistence: more cycles</li>
                 </ul>
             </section>
             <section>
-                <h3>Acknowledgments</h3>TODO
+                <h3>Conclusion and perspective</h3>
+                <p><u>Chemically driven navigation</u></p>
+                <ul>
+                    <li>More realistic flows</li>
+                    <li>Infotaxis</li>
+                </ul><img class="r-stretch" src="assets/river.svg">
             </section>
+            <section data-background-image="assets/thanks.svg"
+            data-background-size="contain"></section>
         </div>
         <script src="dist/reveal.js"></script>
         <script src="plugin/notes/notes.js"></script>
@@ -599,7 +635,7 @@
         <script src="plugin/math/math.js"></script>
         <script>
         Reveal.initialize({
-                                hash: true,
+            hash: true,
             center: true,
             slideNumber: true,
         math: {
