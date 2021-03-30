@@ -15,6 +15,12 @@
 <body>
     <div class="reveal">
         <div class="slides">
+            <section>
+                <p>Before you start:</p>
+                <ul>
+                    <li>Allow <b>video autoplay</b> of the browser</li>
+                </ul>
+            </section>
             <section data-background-video="assets/100_zebra.mp4"
             data-background-video-loop="loop">
                 <img src="assets/su.png" width="25%" style=
@@ -122,13 +128,10 @@
                     workflow</li>
                 </ul>
             </section>-->
-            <section data-background-video="assets/dataset.m4v">
-                <div style=
-                "float:top;color:white;-webkit-text-stroke:2px black;font-size:larger">
-                    <h3 style=
-                    "color:white;-webkit-text-stroke:2px black">
+            <section>
+                    <h3>
                     Two-Dimensional tracking Dataset</h3>
-                    <ul>
+                    <ul style="font-size: smaller;">
                         <li>41 movies under CC BY-NC-SA 4.0
                         license</li>
                         <li>7 animal species (from cells to
@@ -136,13 +139,15 @@
                         <li>Active particles</li>
                         <li>Microfluidic droplets</li>
                         <li>Macrocopic objects</li>
-                        <li>
-                            <a href=
+                         <li>   <a href=
                             "http://chat.ljp.upmc.fr/datasets/TD2/">
                             http://chat.ljp.upmc.fr/datasets/TD2/</a>
                         </li>
                     </ul>
-                </div>
+<video data-autoplay="true" loop=
+                "true" controls="true" class=
+                "r-stretch"><source src="assets/dataset.m4v" type=
+                "video/webm"></video>
             </section>
             <section>
                 <h3>FastTrack: a general tracking software</h3>
@@ -387,7 +392,6 @@
                     <li>Wide range of taxa: unicellular to
                     mamalian</li>
                     <li>Highly conservated features</li>
-                    <li>The most used sensory modality</li>
                     <li>Mediate feeding and reproduction</li>
                 </ul>
             </section>
@@ -453,22 +457,29 @@
                         <li>Light-seeking navigation</li>
                         <li>Spatial & temporal phototaxis</li>
                         <li>Map behavior onto a neuronal model</li>
-                    </ul><span class="citation">(Karpenko, Sophia,
-                    et al., 2020)</span>
+                    </ul>
                 </div>
                 <div style="width:45%; float:left">
                     <img src="assets/phtotaxis.jpg" width="100%">
                     <span class="citation">(Chen, Xiuye, and
                     Florian Engert, 2014)</span>
+                    <img src="assets/karpenko.svg" width="100%">
+<span class="citation">(Karpenko, Sophia,
+                    et al., 2020)</span>
                 </div>
+            </section>
+            <section>
+                <h3>Chemical perception</h3>
+                <ul>
+                    <li>Biological noise</li>
+                    <li>Chemical noise: intermittency,
+                    concentration variations</li>
+                    <li>Moths, mosquitoes: plume structure, concentration independent <span class="citation">(Mafra‐Neto, A., and R. T. Cardé., 1995)</span><span class="citation">(Dekker, Teun, Willem Takken, and Ring T. Cardé., 2001)</span></li>
+                </ul>
             </section>
             <section>
                 <h3>Assessing chemical preference</h3>
                 <ul>
-                    <li>Biological noise</li>
-                    <li>Chemical noise: intermittency,
-                    concentration variations</li><br>
-                    <br>
                     <li>Find an attractive product</li>
                     <li>Study chemically-driven navigation</li>
                     <li>Neuro-imaging <span class=
@@ -537,7 +548,7 @@
                 "assets/manual_sample.webm"></video>
             </section>
             <section>
-                <h3>Markov model</h3><img src="assets/events.svg"
+                <h3 >Markov model</h3><img src="assets/events.svg"
                 width="70%">
                 <div style="width:45%; float:left;margin-left:5%;">
                 <img src="assets/model.svg" width="100%"></div>
@@ -638,7 +649,7 @@
                 "assets/3dATP.svg" class="r-stretch">
             </section>
             <section>
-                <h3>Conclusion and perspective</h3>
+                <h3>Perspective</h3>
                 <p><u>Acquisition</u></p>
                 <ul>
                     <li>Forced bath experiment</li>
@@ -646,20 +657,24 @@
                 "assets/protocol_forced.svg">
             </section>
             <section>
-                <h3>Conclusion and perspective</h3>
+                <h3>Perspective</h3>
                 <p><u>ATP persistence</u></p>
                 <ul>
                     <li>Add more cycles</li>
                 </ul><img class="r-stretch" src="assets/river.svg">
             </section>
             <section>
-                <h3>Conclusion and perspective</h3>
+                <h3>Perspective</h3>
                 <p><u>ATP fish age</u></p>
                 <ul>
                     <li>Effect not present for larval zebrafish
                     $\approx$ 7 days</li>
-                    <li>Check on <i>Danionella translucida</i></li>
+                    <li>Check on <i>Danionella translucida</i><div class="citation">(Schulze, Lisanne, et al., 2018)</div></li>
                 </ul>
+<video data-autoplay="true" loop=
+                "true" controls="true" class=
+                "r-stretch"><source src="assets/danionella.webm" type=
+                "video/webm"></video>
             </section>
             <section data-background-image="assets/thanks.svg"
             data-background-size="contain"></section>
@@ -670,12 +685,6 @@
         <script src="plugin/highlight/highlight.js"></script>
         <script src="plugin/math/math.js"></script>
         <script>
-
-
-
-
-
-
         Reveal.initialize({
             hash: true,
             center: true,

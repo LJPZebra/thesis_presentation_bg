@@ -8,8 +8,8 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="594.60559mm"
-   height="202.62187mm"
-   viewBox="0 0 594.60559 202.62188"
+   height="126.9516mm"
+   viewBox="0 0 594.6056 126.95161"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
@@ -246,21 +246,21 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="981.18955"
-     inkscape:cy="276.92314"
+     inkscape:zoom="0.49497474"
+     inkscape:cx="999.95632"
+     inkscape:cy="45.473584"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g1122"
      inkscape:document-rotation="0"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1080"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-width="1906"
+     inkscape:window-height="1042"
+     inkscape:window-x="6"
+     inkscape:window-y="30"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata5">
@@ -278,242 +278,191 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(61.852762,33.171883)">
+     transform="translate(61.852761,33.171884)">
     <g
-       id="g1924"
-       transform="translate(-110.01054,-47.851707)">
+       id="g1122">
       <rect
-         style="fill:#0099ff;fill-opacity:0.99838604;stroke:#000000;stroke-width:0.26458299;stroke-opacity:1"
+         style="fill:#0099ff;fill-opacity:0.99838604;stroke:#000000;stroke-width:0.20407338;stroke-opacity:1"
          id="rect850"
-         width="186.43469"
-         height="119.81534"
-         x="14.812116"
-         y="-168.10541"
+         width="110.89996"
+         height="119.82754"
+         x="-33.069847"
+         y="-58.076813"
          transform="rotate(90)" />
       <rect
-         style="fill:#ff3300;fill-opacity:1;stroke:#ffffff;stroke-width:0.26458299"
+         style="fill:#ff3300;fill-opacity:1;stroke:#ffffff;stroke-width:0.20407338"
          id="rect10"
-         width="186.43469"
-         height="59.907669"
-         x="14.812116"
-         y="-168.10541"
+         width="110.89996"
+         height="59.913769"
+         x="-33.069847"
+         y="-58.076813"
          transform="rotate(90)" />
-      <rect
-         style="fill:#0000ff;fill-opacity:0;stroke:#ffffff;stroke-width:0.26458299"
-         id="rect10-3"
-         width="186.43469"
-         height="59.907669"
-         x="14.812122"
-         y="-108.19775"
-         inkscape:transform-center-x="-33.69885"
-         inkscape:transform-center-y="19.534683"
-         transform="rotate(90)" />
-      <text
-         xml:space="preserve"
-         id="text852"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58329964px;line-height:1.25;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;white-space:pre;shape-inside:url(#rect854);fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="145.18927"
-         y="-33.302422"><tspan
-           x="160.16974"
-           y="25.66571"
-           id="tspan45"
-           style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58329964px;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             id="tspan43">P</tspan></tspan></text>
       <path
          style="fill:none;stroke:#ffffff;stroke-width:1.16499996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2288)"
-         d="M 53.41753,86.598673 161.0571,129.15779"
+         d="M -56.59301,0.33970119 51.04656,42.898818"
          id="path862"
          inkscape:connector-curvature="0" />
-    </g>
-    <text
-       y="-68.159187"
-       x="-161.26668"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.875px;line-height:1.25;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;white-space:pre;shape-inside:url(#rect1226);fill:#000000;fill-opacity:1;stroke:none"
-       id="text1224"
-       xml:space="preserve"><tspan
-         id="tspan51"
-         y="169.40236"
-         x="-11.194424"><tspan
-           id="tspan49"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.875px;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal">BP</tspan></tspan></text>
-    <g
-       id="g1997"
-       transform="translate(-78.210015,-0.01352598)">
+      <text
+         xml:space="preserve"
+         id="text1224"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.875px;line-height:1.25;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;white-space:pre;shape-inside:url(#rect1226);fill:#000000;fill-opacity:1;stroke:none"
+         x="-161.26668"
+         y="-143.82985"><tspan
+           x="-11.194424"
+           y="93.732094"
+           id="tspan51"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.875px;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal"
+             id="tspan49">BP</tspan></tspan></text>
       <rect
-         style="fill:#0099ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458299;stroke-opacity:1"
+         style="fill:#0099ff;fill-opacity:1;stroke:#000000;stroke-width:0.20407338;stroke-opacity:1"
          id="rect850-7"
-         width="186.43469"
-         height="119.81534"
-         x="-33.026062"
-         y="-452.65536"
+         width="110.89996"
+         height="119.82754"
+         x="-33.069843"
+         y="-374.4595"
          transform="rotate(90)" />
       <rect
-         style="fill:#ff3300;fill-opacity:1;stroke:#ffffff;stroke-width:0.26458299"
+         style="fill:#ff3300;fill-opacity:1;stroke:#ffffff;stroke-width:0.20407338"
          id="rect10-9"
-         width="186.43469"
-         height="59.907669"
-         x="-33.026062"
-         y="-452.65536"
-         transform="rotate(90)" />
-      <rect
-         style="fill:#0000ff;fill-opacity:0;stroke:#ffffff;stroke-width:0.26458299"
-         id="rect10-3-4"
-         width="186.43469"
-         height="59.907669"
-         x="-33.026062"
-         y="-392.74768"
-         inkscape:transform-center-x="-33.698849"
-         inkscape:transform-center-y="19.534683"
+         width="110.89996"
+         height="59.913769"
+         x="-33.069843"
+         y="-374.4595"
          transform="rotate(90)" />
       <text
          xml:space="preserve"
          id="text852-8"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58329964px;line-height:1.25;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;white-space:pre;shape-inside:url(#rect854-9);fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="429.20438"
-         y="-81.154137"><tspan
-           x="444.18484"
-           y="-22.185997"
+         x="350.99435"
+         y="-81.167664"><tspan
+           x="365.97482"
+           y="-22.199524"
            id="tspan59"
            style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"><tspan
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58329964px;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="tspan57">P</tspan></tspan></text>
       <path
          style="fill:none;stroke:#ffffff;stroke-width:1.16499996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2356)"
-         d="m 337.96713,38.760504 55.16152,21.810059 -54.41799,19.53654"
+         d="M 259.75711,0.78118325 314.91863,22.591242 260.50064,42.127782"
          id="path862-4"
          sodipodi:nodetypes="ccc"
          inkscape:connector-curvature="0" />
-    </g>
-    <text
-       y="-68.159248"
-       x="154.50433"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.875px;line-height:1.25;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;white-space:pre;shape-inside:url(#rect1226-1);fill:#000000;fill-opacity:1;stroke:none"
-       id="text1224-5"
-       xml:space="preserve"><tspan
-         id="tspan65"
-         y="169.40236"
-         x="304.5766"><tspan
-           id="tspan63"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.875px;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal">BB</tspan></tspan></text>
-    <text
-       y="-68.159233"
-       x="313.79037"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.875px;line-height:1.25;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;white-space:pre;shape-inside:url(#rect1226-3-1);fill:#000000;fill-opacity:1;stroke:none"
-       id="text1224-7-3"
-       xml:space="preserve"><tspan
-         id="tspan78"
-         y="169.40236"
-         x="463.86261"><tspan
-           id="tspan76"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.875px;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal">PP</tspan></tspan></text>
-    <g
-       id="g2012"
-       transform="translate(-115.46044,-0.02736952)">
+      <text
+         xml:space="preserve"
+         id="text1224-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.875px;line-height:1.25;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;white-space:pre;shape-inside:url(#rect1226-1);fill:#000000;fill-opacity:1;stroke:none"
+         x="154.50433"
+         y="-143.82951"><tspan
+           x="304.5766"
+           y="93.732094"
+           id="tspan65"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.875px;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal"
+             id="tspan63">BB</tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         id="text1224-7-3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.875px;line-height:1.25;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;white-space:pre;shape-inside:url(#rect1226-3-1);fill:#000000;fill-opacity:1;stroke:none"
+         x="313.79037"
+         y="-143.8295"><tspan
+           x="463.86261"
+           y="93.732094"
+           id="tspan78"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.875px;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal"
+             id="tspan76">PP</tspan></tspan></text>
       <rect
-         style="fill:#0099ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458299;stroke-opacity:1"
+         style="fill:#0099ff;fill-opacity:1;stroke:#000000;stroke-width:0.20407338;stroke-opacity:1"
          id="rect850-9-1"
-         width="186.43469"
-         height="119.81534"
-         x="-33.012218"
-         y="-648.08099"
+         width="110.89996"
+         height="119.82754"
+         x="-33.069847"
+         y="-532.65082"
          transform="rotate(90)" />
       <rect
-         style="fill:#0000ff;fill-opacity:0;stroke:#ffffff;stroke-width:0.26458299"
-         id="rect10-3-2-6"
-         width="186.43469"
-         height="59.907669"
-         x="-33.012218"
-         y="-588.17334"
-         inkscape:transform-center-x="-33.698836"
-         inkscape:transform-center-y="19.534683"
-         transform="rotate(90)" />
-      <rect
-         style="fill:#ff3300;fill-opacity:1;stroke:#ffffff;stroke-width:0.26458299"
+         style="fill:#ff3300;fill-opacity:1;stroke:#ffffff;stroke-width:0.20407338"
          id="rect10-6-3"
-         width="186.43469"
-         height="59.907669"
-         x="-33.012218"
-         y="-648.08099"
+         width="110.89996"
+         height="59.913769"
+         x="-33.069847"
+         y="-532.65082"
          transform="rotate(90)" />
       <text
          xml:space="preserve"
          id="text852-1-0"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58329964px;line-height:1.25;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;white-space:pre;shape-inside:url(#rect854-6-2);fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         x="624.63037"
-         y="-81.154137"><tspan
-           x="639.61084"
-           y="-22.185997"
+         x="509.16992"
+         y="-81.181503"><tspan
+           x="524.15039"
+           y="-22.213367"
            id="tspan73"
            style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"><tspan
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58329964px;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="tspan71">P</tspan></tspan></text>
       <path
          style="fill:none;stroke:#ffffff;stroke-width:1.16499996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2346)"
-         d="m 643.52665,38.318039 -55.11846,21.918654 54.45637,19.42931"
+         d="M 528.06621,0.77013471 472.94775,22.688789 527.40412,42.118099"
          id="path862-4-6"
          sodipodi:nodetypes="ccc"
          inkscape:connector-curvature="0" />
-    </g>
-    <g
-       id="g1939"
-       transform="translate(-37.250471,-0.01351835)">
       <rect
          transform="rotate(90)"
-         y="-253.52057"
-         x="-33.026073"
-         height="119.81534"
-         width="186.43469"
+         y="-216.26814"
+         x="-33.069847"
+         height="119.82754"
+         width="110.89996"
          id="rect850-9"
-         style="fill:#0099ff;fill-opacity:1;stroke:#000000;stroke-width:0.26458299;stroke-opacity:1" />
+         style="fill:#0099ff;fill-opacity:1;stroke:#000000;stroke-width:0.20407338;stroke-opacity:1" />
       <rect
          transform="rotate(90)"
-         y="-253.52057"
-         x="-33.026073"
-         height="59.907669"
-         width="186.43469"
+         y="-216.26814"
+         x="-33.069847"
+         height="59.913769"
+         width="110.89996"
          id="rect10-6"
-         style="fill:#ff3300;fill-opacity:1;stroke:#ffffff;stroke-width:0.26458299" />
-      <rect
-         transform="rotate(90)"
-         inkscape:transform-center-y="19.534682"
-         inkscape:transform-center-x="-33.69885"
-         y="-193.61292"
-         x="-33.026066"
-         height="59.907669"
-         width="186.43469"
-         id="rect10-3-2"
-         style="fill:#0000ff;fill-opacity:0;stroke:#ffffff;stroke-width:0.26458299" />
+         style="fill:#ff3300;fill-opacity:1;stroke:#ffffff;stroke-width:0.20407338" />
       <text
          inkscape:transform-center-y="-3.7417735"
          inkscape:transform-center-x="1.6036172"
-         y="-81.154106"
-         x="229.53537"
+         y="-81.167625"
+         x="192.2849"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58329964px;line-height:1.25;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;white-space:pre;shape-inside:url(#rect854-6);fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="text852-1"
          xml:space="preserve"><tspan
            style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
            id="tspan87"
-           y="-22.185997"
-           x="244.51584"><tspan
+           y="-22.199516"
+           x="207.26537"><tspan
              id="tspan85"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58329964px;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">P</tspan></tspan></text>
       <path
          inkscape:connector-curvature="0"
          id="path862-2"
-         d="M 248.30411,38.534384 140.53337,80.760234"
+         d="M 211.05364,0.49060499 103.2829,42.716455"
          style="fill:none;stroke:#ffffff;stroke-width:1.16499996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2236)" />
+      <text
+         y="-143.8295"
+         x="-2.7585809"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.875px;line-height:1.25;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;white-space:pre;shape-inside:url(#rect1226-3);fill:#000000;fill-opacity:1;stroke:none"
+         id="text1224-7"
+         xml:space="preserve"><tspan
+           id="tspan93"
+           y="93.732094"
+           x="147.31369"><tspan
+             id="tspan91"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.875px;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal">PB</tspan></tspan></text>
+      <text
+         inkscape:transform-center-y="-3.7417735"
+         inkscape:transform-center-x="1.6036172"
+         y="-81.167625"
+         x="34.107815"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58329964px;line-height:1.25;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;white-space:pre;shape-inside:url(#rect854-6);fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="text852-1-9"
+         xml:space="preserve"><tspan
+           style="stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+           id="tspan87-6"
+           y="-22.199516"
+           x="49.08828"><tspan
+             id="tspan85-0"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58329964px;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">P</tspan></tspan></text>
     </g>
-    <text
-       xml:space="preserve"
-       id="text1224-7"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.875px;line-height:1.25;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;white-space:pre;shape-inside:url(#rect1226-3);fill:#000000;fill-opacity:1;stroke:none"
-       x="-2.7585809"
-       y="-68.159241"><tspan
-         x="147.31369"
-         y="169.40236"
-         id="tspan93"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.875px;font-family:xkcd;-inkscape-font-specification:'xkcd, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal"
-           id="tspan91">PB</tspan></tspan></text>
   </g>
 </svg>
